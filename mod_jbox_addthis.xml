@@ -11,7 +11,9 @@
     <description>MOD_JBOX_ADDTHIS_DESC</description>
     <files>
         <filename module="mod_jbox_addthis">mod_jbox_addthis.php</filename>
+        <filename module="mod_jbox_addthis">script.php</filename>
     </files>
+    <scriptfile>script.php</scriptfile>
     <languages>
         <language tag="fr-FR">language/fr-FR.mod_jbox_addthis.ini</language>
         <language tag="fr-FR">language/fr-FR.mod_jbox_addthis.sys.ini</language>
