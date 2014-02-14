@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+    <name>mod_jbox_addthis</name>
+    <creationDate>October 2013</creationDate>
+    <author>JBox Web</author>
+    <copyright>(C) 2013-2014 JBox Web</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>jteam@jbox-web.com</authorEmail>
+    <authorUrl>www.jbox-web.com</authorUrl>
+    <version>1.1</version>
+    <description>MOD_JBOX_ADDTHIS_DESC</description>
+    <files>
+        <filename module="mod_jbox_addthis">mod_jbox_addthis.php</filename>
+    </files>
+    <languages>
+        <language tag="fr-FR">language/fr-FR.mod_jbox_addthis.ini</language>
+        <language tag="fr-FR">language/fr-FR.mod_jbox_addthis.sys.ini</language>
+        <language tag="en-GB">language/en-GB.mod_jbox_addthis.ini</language>
+        <language tag="en-GB">language/en-GB.mod_jbox_addthis.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="share" label="MOD_JBOX_ADDTHIS_SHARE_FIELDSET_LABEL" description="MOD_JBOX_ADDTHIS_SHARE_FIELDSET_DESC">
+                <field type="list" name="activeShare" label="MOD_JBOX_ADDTHIS_ACTIVE_SHARE_LABEL" description="MOD_JBOX_ADDTHIS_ACTIVE_SHARE_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field type="list" name="position" label="MOD_JBOX_ADDTHIS_POSITION_LABEL" description="MOD_JBOX_ADDTHIS_POSITION_DESC">
+                    <option value="left">MOD_JBOX_ADDTHIS_LEFT</option>
+                    <option value="right">MOD_JBOX_ADDTHIS_RIGHT</option>
+                </field>
+                <field type="text" name="numPreferredServices" label="MOD_JBOX_ADDTHIS_NUM_PREFERED_SERVICES_LABEL" hint="5" description="MOD_JBOX_ADDTHIS_NUM_PREFERED_SERVICES_DESC" />
+                <field type="text" name="postShareTitle" label="MOD_JBOX_ADDTHIS_POST_SHARE_TITLE_LABEL" hint="MOD_JBOX_ADDTHIS_POST_SHARE_TITLE" description="MOD_JBOX_ADDTHIS_POST_SHARE_TITLE_DESC" />
+                <field type="text" name="postShareFollowMsg" label="MOD_JBOX_ADDTHIS_POST_SHARE_FOLLOW_MESSAGE_LABEL" hint="MOD_JBOX_ADDTHIS_POST_SHARE_FOLLOW_MESSAGE" description="MOD_JBOX_ADDTHIS_POST_SHARE_FOLLOW_MESSAGE_DESC" />
+                <field type="text" name="postShareRecommendedMsg" label="MOD_JBOX_ADDTHIS_POST_SHARE_RECOMMAND_MESSAGE_LABEL" hint="MOD_JBOX_ADDTHIS_POST_SHARE_RECOMMAND_MESSAGE" description="MOD_JBOX_ADDTHIS_POST_SHARE_RECOMMAND_MESSAGE_DESC" />
+            </fieldset>
+            <fieldset name="follow" label="MOD_JBOX_ADDTHIS_FOLLOW_FIELDSET_LABEL" description="MOD_JBOX_ADDTHIS_FOLLOW_FIELDSET_DESC">
+                <field type="list" name="facebook" label="MOD_JBOX_ADDTHIS_ACTIVE_FACEBOOK_LABEL" description="MOD_JBOX_ADDTHIS_ACTIVE_FACEBOOK_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field type="text" name="facebookId" label="MOD_JBOX_ADDTHIS_FACEBOOK_ID_LABEL" hint="MOD_JBOX_ADDTHIS_FACEBOOK_ID" description="MOD_JBOX_ADDTHIS_FACEBOOK_ID_DESC" />
+                <field type="list" name="twitter" label="MOD_JBOX_ADDTHIS_ACTIVE_TWITTER_LABEL" description="MOD_JBOX_ADDTHIS_ACTIVE_TWITTER_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field type="text" name="twitterId" label="MOD_JBOX_ADDTHIS_TWITTER_ID_LABEL" hint="MOD_JBOX_ADDTHIS_TWITTER_ID" description="MOD_JBOX_ADDTHIS_TWITTER_ID_DESC" />
+                <field type="list" name="google" label="MOD_JBOX_ADDTHIS_ACTIVE_GPLUS_LABEL" description="MOD_JBOX_ADDTHIS_ACTIVE_GPLUS_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field type="text" name="googleId" label="MOD_JBOX_ADDTHIS_GPLUS_ID_LABEL" hint="MOD_JBOX_ADDTHIS_GPLUS_ID" description="MOD_JBOX_ADDTHIS_GPLUS_ID_DESC" />
+                <field type="list" name="linkedin" label="MOD_JBOX_ADDTHIS_ACTIVE_LINKEDIN_LABEL" description="MOD_JBOX_ADDTHIS_ACTIVE_LINKEDIN_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field type="text" name="linkedinId" label="MOD_JBOX_ADDTHIS_LINKEDIN_ID_LABEL" hint="MOD_JBOX_ADDTHIS_LINKEDIN_ID" description="MOD_JBOX_ADDTHIS_LINKEDIN_ID_DESC" />
+                <field type="text" name="postFollowTitle" label="MOD_JBOX_ADDTHIS_POST_FOLLOW_TITLE_LABEL" hint="MOD_JBOX_ADDTHIS_POST_FOLLOW_TITLE" description="MOD_JBOX_ADDTHIS_POST_FOLLOW_TITLE_DESC" />
+                <field type="text" name="postFollowRecommendedMsg" label="JBOX_ADDTHIS_POST_FOLLOW_RECOMMAND_LABEL" hint="MOD_JBOX_ADDTHIS_POST_FOLLOW_RECOMMAND"  description="JBOX_ADDTHIS_POST_FOLLOW_RECOMMAND_DESC" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field type="text" name="analyticsId" label="JBOX_ADDTHIS_ANALYTICS_ID_LABEL" hint="MOD_JBOX_ADDTHIS_ANALYTICS_ID" description="JBOX_ADDTHIS_ANALYTICS_ID_DESC" />
+                <field type="text" name="responsiveMaxWidth" label="MOD_JBOX_ADDTHIS_RESPONSIVE_MAXWIDTH_LABEL" hint="970px" description="MOD_JBOX_ADDTHIS_RESPONSIVE_MAXWIDTH_DESC" />
+                <field type="text" name="responsiveMinWidth" label="MOD_JBOX_ADDTHIS_RESPONSIVE_MINWIDTH_LABEL" hint="0px" description="MOD_JBOX_ADDTHIS_RESPONSIVE_MINWIDTH_DESC" />
+            	<field name="theme" type="list" label="MOD_JBOX_ADDTHIS_THEME_LABEL" description="MOD_JBOX_ADDTHIS_THEME_DESC">
+					<option value="transparent">Transparent</option>
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+					<option value="grey">Grey</option>
+            	</field>
+                <field name="styles" type="textarea" label="MOD_JBOX_ADDTHIS_CUSTOM_STYLES_LABEL" description="MOD_JBOX_ADDTHIS_CUSTOM_STYLES_DESC" />
+            </fieldset>
+            <fieldset name="credits" label="MOD_JBOX_ADDTHIS_CREDITS_FIELDSET_LABEL">
+                <field type="spacer" label="MOD_JBOX_ADDTHIS_ADVERTISE_TITLE_LABEL"/>
+                <field type="spacer" label="MOD_JBOX_ADDTHIS_ADVERTISE_API_LABEL"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
