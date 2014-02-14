@@ -37,6 +37,10 @@
                 <field type="text" name="postShareRecommendedMsg" label="MOD_JBOX_ADDTHIS_POST_SHARE_RECOMMAND_MESSAGE_LABEL" hint="MOD_JBOX_ADDTHIS_POST_SHARE_RECOMMAND_MESSAGE" description="MOD_JBOX_ADDTHIS_POST_SHARE_RECOMMAND_MESSAGE_DESC" />
             </fieldset>
             <fieldset name="follow" label="MOD_JBOX_ADDTHIS_FOLLOW_FIELDSET_LABEL" description="MOD_JBOX_ADDTHIS_FOLLOW_FIELDSET_DESC">
+                <field type="list" label="MOD_JBOX_ADDTHIS_ACTIVE_FOLLOW_LABEL" description="MOD_JBOX_ADDTHIS_ACTIVE_FOLLOW_DESC" name="activeFollow">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
                 <field type="list" name="facebook" label="MOD_JBOX_ADDTHIS_ACTIVE_FACEBOOK_LABEL" description="MOD_JBOX_ADDTHIS_ACTIVE_FACEBOOK_DESC">
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
@@ -64,12 +68,12 @@
                 <field type="text" name="analyticsId" label="JBOX_ADDTHIS_ANALYTICS_ID_LABEL" hint="MOD_JBOX_ADDTHIS_ANALYTICS_ID" description="JBOX_ADDTHIS_ANALYTICS_ID_DESC" />
                 <field type="text" name="responsiveMaxWidth" label="MOD_JBOX_ADDTHIS_RESPONSIVE_MAXWIDTH_LABEL" hint="970px" description="MOD_JBOX_ADDTHIS_RESPONSIVE_MAXWIDTH_DESC" />
                 <field type="text" name="responsiveMinWidth" label="MOD_JBOX_ADDTHIS_RESPONSIVE_MINWIDTH_LABEL" hint="0px" description="MOD_JBOX_ADDTHIS_RESPONSIVE_MINWIDTH_DESC" />
-            	<field name="theme" type="list" label="MOD_JBOX_ADDTHIS_THEME_LABEL" description="MOD_JBOX_ADDTHIS_THEME_DESC">
-					<option value="transparent">Transparent</option>
-					<option value="light">Light</option>
-					<option value="dark">Dark</option>
-					<option value="grey">Grey</option>
-            	</field>
+                <field name="theme" type="list" label="MOD_JBOX_ADDTHIS_THEME_LABEL" description="MOD_JBOX_ADDTHIS_THEME_DESC">
+                    <option value="transparent">Transparent</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="grey">Grey</option>
+                </field>
                 <field name="styles" type="textarea" label="MOD_JBOX_ADDTHIS_CUSTOM_STYLES_LABEL" description="MOD_JBOX_ADDTHIS_CUSTOM_STYLES_DESC" />
             </fieldset>
             <fieldset name="credits" label="MOD_JBOX_ADDTHIS_CREDITS_FIELDSET_LABEL">
