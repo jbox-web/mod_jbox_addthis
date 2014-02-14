@@ -1,11 +1,11 @@
 <?php
 /**
- * @package		JBox Tools
- * @author 		Lior Chamla (lchamla@jbox-web.com)
- * @abstract	Adds the AddThis SmartLayer to Joomla!
- * @subpackage	mod_jbox_addthis
- * @copyright	Copyright (C) 20011 - 2014 JBox Web (http://www.jbox-web.com).
- * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ * @package     JBox Tools
+ * @author      Lior Chamla (lchamla@jbox-web.com)
+ * @abstract    Adds the AddThis SmartLayer to Joomla!
+ * @subpackage  mod_jbox_addthis
+ * @copyright   Copyright (C) 20011 - 2014 JBox Web (http://www.jbox-web.com).
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 // no direct access
@@ -28,9 +28,9 @@ $script = "";
 if($activeShare = $params->get('activeShare', 0)) {
     $position                = $params->get('position', 'left');
     $numPreferredServices    = $params->get('numPreferredServices', 5);
-    $postShareTitle          = $params->get('postShareTitle', JText::_('MOD_JBOX_ADDTHIS_POST_SHARE_TITLE'));
-    $postShareFollowMsg      = $params->get('postShareFollowMsg', JText::_('MOD_JBOX_ADDTHIS_POST_SHARE_FOLLOW_MESSAGE'));
-    $postShareRecommendedMsg = $params->get('postShareRecommendedMsg', JText::_('MOD_JBOX_ADDTHIS_POST_SHARE_RECOMMAND_MESSAGE'));
+    $postShareTitle          = addslashes($params->get('postShareTitle', JText::_('MOD_JBOX_ADDTHIS_POST_SHARE_TITLE')));
+    $postShareFollowMsg      = addslashes($params->get('postShareFollowMsg', JText::_('MOD_JBOX_ADDTHIS_POST_SHARE_FOLLOW_MESSAGE')));
+    $postShareRecommendedMsg = addslashes($params->get('postShareRecommendedMsg', JText::_('MOD_JBOX_ADDTHIS_POST_SHARE_RECOMMAND_MESSAGE')));
     $script .= <<<EOQ
 'share' : {'position' : '{$position}','numPreferredServices' : {$numPreferredServices},'postShareTitle' : '{$postShareTitle}','postShareFollowMsg' : '{$postShareFollowMsg}','postShareRecommendedMsg' : '{$postShareRecommendedMsg}'}, 
 EOQ;
@@ -38,16 +38,16 @@ EOQ;
 
 // if Follow is active :
 if($activeFollow = $params->get('activeFollow', '0')) {
-    $postFollowRecommendedMsg = $params->get('postFollowRecommendedMsg', JText::_('MOD_JBOX_ADDTHIS_POST_FOLLOW_RECOMMAND'));
-    $postFollowTitle          = $params->get('postFollowTitle', JText::_('MOD_JBOX_ADDTHIS_POST_FOLLOW_TITLE'));
+    $postFollowRecommendedMsg = addslashes($params->get('postFollowRecommendedMsg', JText::_('MOD_JBOX_ADDTHIS_POST_FOLLOW_RECOMMAND')));
+    $postFollowTitle          = addslashes($params->get('postFollowTitle', JText::_('MOD_JBOX_ADDTHIS_POST_FOLLOW_TITLE')));
     $facebook                 = $params->get('facebook', null);
-    $facebookId               = $params->get('facebookId', null);
+    $facebookId               = addslashes($params->get('facebookId', null));
     $twitter                  = $params->get('twitter', null);
-    $twitterId                = $params->get('twitterId', null);
+    $twitterId                = addslashes($params->get('twitterId', null));
     $google                   = $params->get('google', null);
-    $googleId                 = $params->get('googleId', null);
+    $googleId                 = addslashes($params->get('googleId', null));
     $linkedin                 = $params->get('linkedin', null);
-    $linkedinId               = $params->get('linkedinId', null);
+    $linkedinId               = addslashes($params->get('linkedinId', null));
     $script .= <<<EOQ
 'follow' : {'services' : [
 EOQ;
