@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="1.6.0" client="site" method="upgrade">
     <name>mod_jbox_addthis</name>
-    <creationDate>October 2013</creationDate>
+    <creationDate>February 2014</creationDate>
     <author>JBox Web</author>
-    <copyright>(C) 2013-2014 JBox Web</copyright>
+    <copyright>(C) 2014 JBox Web</copyright>
     <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
     <authorEmail>jteam@jbox-web.com</authorEmail>
     <authorUrl>www.jbox-web.com</authorUrl>
-    <version>1.1</version>
+    <version>1.0</version>
     <description>MOD_JBOX_ADDTHIS_DESC</description>
     <files>
         <filename module="mod_jbox_addthis">mod_jbox_addthis.php</filename>
