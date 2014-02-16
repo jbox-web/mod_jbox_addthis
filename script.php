@@ -5,7 +5,7 @@
  * @abstract	Adds the AddThis SmartLayer to Joomla!
  * @subpackage	mod_jbox_addthis
  * @copyright	Copyright (C) 2014 JBox Web (http://www.jbox-web.com).
- * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ * @license		GNU General Public License version 2 or later
  */
 
 
