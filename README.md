@@ -20,7 +20,7 @@ Installation
 
 Copyright & Licence
 ====================
-Copyright (c) 2014 Lior Chamla (lchamla@jbox-web.com), JBox Web (http://www.jbox-web.com)
+Copyright (c) 2014 Lior Chamla (lchamla@jbox-web.com), JBox Web (http://www.jbox-web.com), GPL Licence
 
 More help
 =========
