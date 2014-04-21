@@ -72,7 +72,7 @@ $theme    = $params->get('theme', 'transparent');
 
 // script finalization :
 $script = "addthis.layers({'theme' : '" . $theme . "', 'responsive' : {'maxWidth': '$maxWidth','minWidth': '$minWidth'}," . $script . "  });";
-$JS .= "\n\njQuery(document).ready(function(){";
+$JS = "\n\njQuery(document).ready(function(){";
 $JS .= $script;
 $JS .= "\n});";
 
