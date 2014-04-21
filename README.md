@@ -1,4 +1,4 @@
-JBox AddThis SmartLayer module for Joomla (v1.0)
+JBox AddThis SmartLayer module for Joomla (v1.0.1)
 ================
 This little Joomla module will help you with handling JBox AddThis Smartlayer ! It embeds all the needed scripts and code, and let you manage everything just with simple forms ! No code to add : install it and make it work quick.
 
